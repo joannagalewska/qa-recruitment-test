@@ -7,13 +7,13 @@
     "lint": "npx eslint --fix"
   },
   "dependencies": {
-    "cypress": "^9.2.0",
-    "cypress-selectors": "^1.0.2"
+    "cypress": "^9.2.0"
   },
   "volta": {
     "node": "16.13.1"
   },
   "devDependencies": {
+    "cypress-selectors": "^1.0.2",
     "eslint": "^8.10.0",
     "eslint-plugin-cypress": "^2.12.1",
     "prettier": "2.5.1"
