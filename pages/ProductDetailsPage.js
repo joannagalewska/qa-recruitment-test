@@ -1,9 +1,14 @@
 import BasePage from "./BasePage";
-import ProductDetailsPanel from "../components/ProductDetailsPanel";
+import ProductDetails from "../components/ProductDetails";
 
 export default class ProductDetailsPage extends BasePage {
   constructor() {
     super();
-    this.productDetailsPanel = new ProductDetailsPanel();
+    this.productDetails = new ProductDetails();
+  }
+
+  addToCart(product) {
+    this.productDetails.verifyProductDetails(product);
+    this.productDetails.addProductToCart(product);
   }
 }

@@ -1,0 +1,51 @@
+{
+  "orders": [
+    {
+      "context": "add single product",
+      "products": [
+        {
+          "code": "SKU WP09",
+          "color": "Black",
+          "name": "Carina Basic Capri",
+          "price": 51,
+          "size": 28,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "context": "add multiple same products",
+      "products": [
+        {
+          "code": "SKU WP09",
+          "color": "Black",
+          "name": "Carina Basic Capri",
+          "price": 51,
+          "size": 28,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "context": "add multiple different products",
+      "products": [
+        {
+          "code": "SKU WP09",
+          "color": "Black",
+          "name": "Carina Basic Capri",
+          "price": 51,
+          "size": 28,
+          "quantity": 1
+        },
+        {
+          "code": "SKU MP12",
+          "color": "Red",
+          "name": "Cronus Yoga Pant",
+          "price": 48,
+          "size": 36,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
