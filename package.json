@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "cypress": "cypress open",
+    "test": "cypress run",
     "prettier": "npx prettier . -u --write",
     "lint": "npx eslint --fix"
   },
@@ -13,7 +14,6 @@
     "node": "16.13.1"
   },
   "devDependencies": {
-    "cypress-selectors": "^1.0.2",
     "eslint": "^8.10.0",
     "eslint-plugin-cypress": "^2.12.1",
     "prettier": "2.5.1"

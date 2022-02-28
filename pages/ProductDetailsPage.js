@@ -7,6 +7,13 @@ export default class ProductDetailsPage extends BasePage {
     this.productDetails = new ProductDetails();
   }
 
+  verifySuccessMessage({ name }) {
+    return this.productDetails
+      .getMessage()
+      .contains(`added ${name}`)
+      .should("be.visible");
+  }
+
   addToCart(product) {
     this.productDetails.verifyProductDetails(product);
     this.productDetails.addProductToCart(product);
