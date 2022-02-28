@@ -9,6 +9,7 @@ export default class ProductDetails {
     this.colorButton = ".product-options .color";
     this.quantityInput = "#qty";
     this.colorErrorText = ".color div.mage-error";
+    this.successMessage = '[data-ui-id="message-success"]';
   }
 
   getProductName() {
@@ -37,17 +38,14 @@ export default class ProductDetails {
     return cy.get(this.colorButton).find(selector).click({ force: true });
   }
 
-  clickPlusButton() {
-    return cy
-      .get(this.element)
-      .find(this.quantityPlusButton)
-      .click({ force: true });
-  }
-
   setQuantity(quantity) {
     if (quantity > 1) {
-      cy.get(this.quantityInput).clear().type(quantity);
+      return cy.get(this.quantityInput).clear().type(quantity);
     }
+  }
+
+  getMessage() {
+    return cy.get(this.successMessage);
   }
 
   verifyProductDetails({ name, code, price }) {
