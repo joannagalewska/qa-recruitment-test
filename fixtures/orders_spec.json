@@ -2,47 +2,53 @@
   "orders": [
     {
       "context": "add single product",
+      "totalQuantity": 1,
+      "totalPrice": 82,
       "products": [
         {
-          "code": "SKU WP09",
-          "color": "Black",
-          "name": "Carina Basic Capri",
-          "price": 51,
-          "size": 28,
+          "code": "SKU MP08",
+          "color": "Green",
+          "name": "Zeppelin Yoga Pant",
+          "price": 82,
+          "size": 33,
           "quantity": 1
         }
       ]
     },
     {
       "context": "add multiple same products",
+      "totalQuantity": 3,
+      "totalPrice": 246,
       "products": [
         {
-          "code": "SKU WP09",
-          "color": "Black",
-          "name": "Carina Basic Capri",
-          "price": 51,
-          "size": 28,
+          "code": "SKU MP08",
+          "color": "Red",
+          "name": "Zeppelin Yoga Pant",
+          "price": 82,
+          "size": 36,
           "quantity": 3
         }
       ]
     },
     {
       "context": "add multiple different products",
+      "totalQuantity": 2,
+      "totalPrice": 246,
       "products": [
         {
-          "code": "SKU WP09",
-          "color": "Black",
-          "name": "Carina Basic Capri",
-          "price": 51,
-          "size": 28,
+          "code": "SKU MP08",
+          "color": "Red",
+          "name": "Zeppelin Yoga Pant",
+          "price": 82,
+          "size": 36,
           "quantity": 1
         },
         {
-          "code": "SKU MP12",
-          "color": "Red",
-          "name": "Cronus Yoga Pant",
-          "price": 48,
-          "size": 36,
+          "code": "SKU MT12",
+          "color": "Blue",
+          "name": "Cassius Sparring Tank",
+          "price": 18,
+          "size": "XS",
           "quantity": 1
         }
       ]

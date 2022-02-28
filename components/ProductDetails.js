@@ -7,7 +7,7 @@ export default class ProductDetails {
     this.addToCartButton = "#product-addtocart-button";
     this.sizeButton = ".product-options .size .swatch__option";
     this.colorButton = ".product-options .color";
-    this.quantityInput = ".quantity-update__input";
+    this.quantityInput = "#qty";
     this.colorErrorText = ".color div.mage-error";
   }
 
@@ -37,8 +37,17 @@ export default class ProductDetails {
     return cy.get(this.colorButton).find(selector).click({ force: true });
   }
 
+  clickPlusButton() {
+    return cy
+      .get(this.element)
+      .find(this.quantityPlusButton)
+      .click({ force: true });
+  }
+
   setQuantity(quantity) {
-    // return cy.get(this.quantityInput).type(quantity, { force: true });
+    if (quantity > 1) {
+      cy.get(this.quantityInput).clear().type(quantity);
+    }
   }
 
   verifyProductDetails({ name, code, price }) {

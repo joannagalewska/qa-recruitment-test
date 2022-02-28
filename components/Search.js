@@ -12,9 +12,15 @@ export default class Search {
     return cy.get(this.loopButton).click();
   }
 
+  selectSearchResult(text) {
+    const selector = `.quicksearch__name a[title="${text}"]`;
+
+    return cy.get(selector).click({ force: true });
+  }
+
   searchByPhrase(text) {
     this.getSearchInput().clear();
     this.getSearchInput().type(text);
-    this.clickSearchLoopButton();
+    this.selectSearchResult(text);
   }
 }
